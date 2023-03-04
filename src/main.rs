@@ -1,6 +1,10 @@
 use clap::Parser;
 
 /// Simple program to greet a person
+
+// These attributes apply only to the item and not the crate.
+// https://doc.rust-lang.org/rust-by-example/attribute.html
+// Debug makes the {:?} formatter available.
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
